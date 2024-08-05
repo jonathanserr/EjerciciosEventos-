@@ -18,45 +18,38 @@
 
         <!-- Ejercicio Indice Masa Corporal -->
         <div class="d-flex flex-wrap justify-content-evenly">
-            <div class="col-11 col-md-5">
-                <div class="container-fluid pt-4">
-                    <h1 class="text-center text-primary">CALCULADORA IMC</h1>
-                    <form id="form">
-                        <div class="mb-3 ">
-                            <label for="altura" class="form-label">ESTATURA (Cms):</label>
-                            <input type="number" class="form-control" id="altura"
-                                placeholder="Ingrese su estatura (Cms)">
-                        </div>
-                        <div class="mb-2">
-                            <label for="kilogramo" class="form-label">PESO (Kgs):</label>
-                            <input type="number" class="form-control" id="kilogramo" placeholder="Ingrese su peso (Kgs)">
-                        </div>
-                        <div class="d-flex justify-content-center mb-2">
-                            <button type="submit" class="btn btn-primary">CALCULAR</button>
-                        </div>
-                        <div class="pt-4 d-flex flex-column align-items-center col-11">
-                            <label for="IMC" class="form-label">SU INDICE DE MASA CORPORAL ES:</label>
-                            <input type="text" class="form-control" id="IMC" disabled>
-                        </div>
-                    </form>
-                </div>
+            <div class="col-11 col-md-5 container-fluid pt-4">
+                <h1 class="text-center text-primary">CALCULADORA IMC</h1>
+                <form id="form">
+                    <div class="mb-2 pt-2">
+                        <label class="form-label">ESTATURA (Cms):</label>
+                        <input type="number" class="form-control" id="altura" placeholder="Ingrese su estatura (Cms)">
+                        <label for="kilogramo" class="form-label p-1">PESO (Kgs):</label>
+                        <input type="number" class="form-control" id="kilogramo" placeholder="Ingrese su peso (Kgs)">
+                    </div>
+                    <div class="d-flex justify-content-center mb-2">
+                        <button type="submit" class="btn btn-primary">CALCULAR</button>
+                    </div>
+                    <div class="pt-4 d-flex flex-column align-items-center col-11">
+                        <label for="IMC" class="form-label">SU INDICE DE MASA CORPORAL ES:</label>
+                        <input type="text" class="form-control" id="IMC" disabled>
+                    </div>
+                </form>
             </div>
 
             <!-- Ejercicio Conversor Divisa -->
-            <div class="col-11 col-md-5 d-flex pt-5">
-                <div class="container-fluid pt-2">
-                    <h1 class="text-center text-primary">CONVERSOR DE DIVISA</h1>
-                    <form id="formularioDivisa" class="">
-                        <div class="mb-3">
-                            <label for="dolar" class="form-label">DOLARES (USD):</label>
-                            <input type="text" class="form-control" id="dolar" placeholder="Introduzca USD">
-                        </div>
-                        <div class="mb-3">
-                            <label for="peso" class="form-label">PESO CHIBCHA (COP):</label>
-                            <input type="text" class="form-control" id="peso" placeholder="Introduzca COP">
-                        </div>
-                    </form>
-                </div>
+            <div class="col-11 col-md-5 container-fluid pt-5 pt-md-0">
+                <h1 class="text-center text-primary pt-4">CONVERSOR DIVISA</h1>
+                <form id="formularioDivisa" class="pt-5">
+                    <div class="mb-3">
+                        <label for="dolar" class="form-label">DOLARES (USD):</label>
+                        <input type="text" class="form-control" id="dolar" placeholder="Introduzca USD">
+                    </div>
+                    <div class="mb-3 pt-4">
+                        <label for="peso" class="form-label">PESO CHIBCHA (COP):</label>
+                        <input type="text" class="form-control" id="peso" placeholder="Introduzca COP">
+                    </div>
+                </form>
             </div>
         </div>
 
