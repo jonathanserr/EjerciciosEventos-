@@ -85,8 +85,8 @@ let filterSearch = document.getElementById("Busqueda")
 
 function crearNota(nota) {
     let notaHTML = `
-    <div class="card col-sm-6 col-md-5 col-lg-4 " id="note-${nota.id}">
-            <div class="card-header d-flex justify-content-start ">
+    <div class="card text-bg-info col-md-5 col-lg-3" id="note-${nota.id}">
+            <div class="card-header gap-2 d-flex justify-content-start ">
                 <input class="form-check-input " onClick="marcarRealizada(${nota.id})" type="checkbox" ${nota.realizada ?
                     "checked" : ""} id="note-${nota.id}">
                 <h5 class="card-title">${nota.titulo}</h5>
@@ -133,7 +133,7 @@ function borrarNota(id) {
     pintarNotas(notas, contenedorNotas)
 }
 
-function limpiarCampos() {
+function BorrarCampos() {
     tituloNota.value = ""
     descripcionNota.value = ""
 }

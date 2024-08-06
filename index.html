@@ -12,13 +12,14 @@
 
 <body>
     <header>
+        <h1 class="bg-dark text-white text-center">EJERCICIOS EVENTOS</h1>
 
     </header>
     <main>
-       
-        <div class="d-flex flex-wrap justify-content-center">
+
+        <div class="bg-secondary bg-opacity-25  d-flex flex-wrap justify-content-center">
             <!-- Ejercicio Indice Masa Corporal -->
-            <div class="col-11 col-md-5 container-fluid pt-4">
+            <div class="borde mt-4 col-11 col-md-5 container-fluid pt-4">
                 <h1 class="text-center text-primary">CALCULADORA IMC</h1>
                 <form id="form">
                     <div class="mb-2 pt-2">
@@ -32,13 +33,13 @@
                     </div>
                     <div class="pt-4 d-flex flex-column align-items-center col-11">
                         <label for="IMC" class="form-label">SU INDICE DE MASA CORPORAL ES:</label>
-                        <input type="text" class="form-control" id="IMC" disabled>
+                        <input type="text" class="mb-2 border-dark form-control" id="IMC" disabled>
                     </div>
                 </form>
             </div>
 
             <!-- Ejercicio Conversor Divisa -->
-            <div class="col-11 col-md-5 container-fluid pt-5 pt-md-0">
+            <div class="borde mt-4 col-11 col-md-5 container-fluid pt-5 pt-md-0">
                 <h1 class="text-center text-primary pt-4">CONVERSOR DIVISA</h1>
                 <form id="formularioDivisa" class="pt-5">
                     <div class="mb-3">
@@ -53,30 +54,33 @@
             </div>
 
             <!-- Ejercicio NOTAS -->
-            <div class="col-11 col-md-9 col-lg-8  pt-5">
-                <h1 class="text-center text-primary ">NOTAS</h1>
-                <form class="mb-4">
-                    <h4>NUEVA NOTA</h4>
+            <div class="borde col-11 mt-4 mb-2 d-flex flex-wrap justify-content-center">
+                <div class="col-11 col-md-9 col-lg-8  pt-5">
+                    <h1 class="text-center text-primary ">NOTAS</h1>
+                    <form class="mb-4">
+                        <h4>NUEVA NOTA</h4>
+                        <div>
+                            <input type="text" class="form-control mb-2" id="titulo" placeholder="Titulo" required>
+                            <textarea class="form-control mb-2" id="notaDecripcion" rows="5"
+                                placeholder="Escriba su nota aquí ...." required></textarea>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary" id="Guardar">Guardar</button>
+                            <button type="button" onclick="BorrarCampos()" class="btn btn-danger">Borrar</button>
+                        </div>
+                    </form>
+
                     <div>
-                        <input type="text" class="form-control mb-2" id="titulo" placeholder="Titulo" required>
-                        <textarea class="form-control mb-2" id="notaDecripcion" rows="5" placeholder="Escriba su nota aquí ...." required></textarea>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-primary" id="Guardar">Guardar</button>
-                        <button type="button" onclick="limpiarCampos()" class="btn btn-danger">Borrar</button>
-                    </div>
-                </form>
-                
-                <div>
-                    <input class="form-control mb-2" id="Busqueda" placeholder="Buscar texto">
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" id="CheckFiltro">
-                        <label class="form-check-label">REALIZADAS</label>
+                        <input class="form-control mb-2" id="Busqueda" placeholder="Buscar texto">
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" id="CheckFiltro">
+                            <label class="form-check-label">REALIZADAS</label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row" id="contNotas">
+                <div class="container col-11">
+                    <div class="row gap-2 m-2 justify-content-around" id="contNotas">
+                    </div>
                 </div>
             </div>
 
@@ -87,6 +91,7 @@
 
     </main>
     <footer>
+        <p class="bg-dark text-white text-center">Jonathan Serrano ---- CH5</p>
 
     </footer>
 

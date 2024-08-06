@@ -4,3 +4,8 @@
     box-sizing: border-box;
     
 }
+
+.borde{
+    border: 1px, solid,black;
+    border-radius: 1rem;
+}
