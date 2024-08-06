@@ -15,9 +15,9 @@
 
     </header>
     <main>
-
-        <!-- Ejercicio Indice Masa Corporal -->
-        <div class="d-flex flex-wrap justify-content-evenly">
+       
+        <div class="d-flex flex-wrap justify-content-center">
+            <!-- Ejercicio Indice Masa Corporal -->
             <div class="col-11 col-md-5 container-fluid pt-4">
                 <h1 class="text-center text-primary">CALCULADORA IMC</h1>
                 <form id="form">
@@ -51,6 +51,37 @@
                     </div>
                 </form>
             </div>
+
+            <!-- Ejercicio NOTAS -->
+            <div class="col-11 col-md-9 col-lg-8  pt-5">
+                <h1 class="text-center text-primary ">NOTAS</h1>
+                <form class="mb-4">
+                    <h4>NUEVA NOTA</h4>
+                    <div>
+                        <input type="text" class="form-control mb-2" id="titulo" placeholder="Titulo" required>
+                        <textarea class="form-control mb-2" id="notaDecripcion" rows="5" placeholder="Escriba su nota aquí ...." required></textarea>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary" id="Guardar">Guardar</button>
+                        <button type="button" onclick="limpiarCampos()" class="btn btn-danger">Borrar</button>
+                    </div>
+                </form>
+                
+                <div>
+                    <input class="form-control mb-2" id="Busqueda" placeholder="Buscar texto">
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" id="CheckFiltro">
+                        <label class="form-check-label">REALIZADAS</label>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" id="contNotas">
+                </div>
+            </div>
+
+
+
         </div>
 
 
